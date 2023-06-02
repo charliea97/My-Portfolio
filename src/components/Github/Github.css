@@ -1,0 +1,6 @@
+.github {
+  display: flex;
+  justify-content: end;
+  color: white;
+  border: 5px solid blue;
+}
