@@ -1,0 +1,14 @@
+:root {
+  --app-bg: linear-gradient(0deg, #0b1626 0%, #402880 50%);
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #0b1626;
+}
+
+.iFrame {
+  display: none;
+}
