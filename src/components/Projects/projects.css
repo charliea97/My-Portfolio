@@ -6,21 +6,24 @@
 }
 
 .projects-container h1 {
-  color: green;
+  color: black;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 45px;
+  letter-spacing: 3px;
 }
 
 .single-project-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px solid gray;
+  border: 3px solid rgb(0, 0, 0);
   border-radius: 30px;
   padding: 10px 55px;
   margin-bottom: 20px;
   transition: transform 0.3s ease-in-out;
+  background: transparent;
+  backdrop-filter: blur(3px);
 }
 
 @keyframes glowAnimation {
@@ -50,32 +53,44 @@
 }
 
 .project-name {
-  color: white;
+  color: rgb(62, 62, 62);
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.project-description {
+  color: rgb(62, 62, 62);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  letter-spacing: 2px;
 }
 
 .project-github a {
   text-decoration: none;
-  color: rgb(255, 88, 88);
+  color: rgb(37, 33, 33);
   font-size: 25px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
 }
 
 .project-link a {
   text-decoration: none;
-  color: rgb(255, 88, 88);
+  color: rgb(37, 33, 33);
   font-size: 25px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
 }
 
 .project-video a {
-  color: rgb(255, 88, 88);
+  color: rgb(37, 33, 33);
   font-size: 25px;
   text-decoration: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
 }

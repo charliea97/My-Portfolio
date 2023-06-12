@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/Header/Header";
+import AboutMe from "../components/About Me/AboutMe";
 import Projects from "../components/Projects/Projects";
 import Certifications from "../components/Certifications/Certifications";
 import Footer from "../components/Footer/Footer";
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <AboutMe />
       <iframe
         className="iFrame"
         title="ambient-music"

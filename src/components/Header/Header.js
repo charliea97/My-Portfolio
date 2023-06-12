@@ -12,7 +12,13 @@ const Header = () => {
         >
           Charlie
         </a>
-        Aloisio
+        <a
+          rel="noreferrer"
+          href="https://www.ancestry.com/name-origin?surname=aloisio"
+          target="_blank"
+        >
+          Aloisio
+        </a>
       </h1>
       <h2>Fullstack Software Engineer</h2>
       <p>{`PERN Stack | Javascript | React | CSS`}</p>

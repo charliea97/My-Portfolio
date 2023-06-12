@@ -3,12 +3,27 @@
 }
 
 body {
-  height: 100%;
+  height: fit-content;
   margin: 0;
   padding: 0;
-  background-color: #0b1626;
+  /* background-color: #0b1626; */
+  background-image: url("https://i.gifer.com/vF.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .iFrame {
   display: none;
+}
+
+/* Hide the scrollbar track */
+::-webkit-scrollbar {
+  width: 0px; /* Adjust the width as needed */
+  background-color: transparent;
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }

@@ -6,6 +6,15 @@ const Projects = () => {
     {
       id: 1,
       name: "RITH Trading App",
+      description: (
+        <div className="description">
+          A mock stock trading application
+          <br />
+          Interactive Charts
+          <br />
+          AI Powered Chatbot Assistant
+        </div>
+      ),
       github:
         "https://github.com/CapstoneGroupThree/Robin-In-the-Hood-Trading-Corp-1",
       link: "https://rith-trading.onrender.com/",
@@ -14,6 +23,7 @@ const Projects = () => {
     {
       id: 2,
       name: "Grace Shopper",
+      description: `An E-Commerce website`,
       github:
         "https://github.com/2301-fsa-et-web-ft-af-graceshopper-g1/grace_shopper",
       link: "https://graceshoppings-api.onrender.com/",
@@ -21,15 +31,17 @@ const Projects = () => {
     {
       id: 3,
       name: "3D Solar System Model",
+      description: `A 3D model of the Solar System`,
       github: "https://github.com/charliea97/Solar-System-Model",
     },
   ];
   return (
     <div className="projects-container">
-      <h1>Projects</h1>
-      {projects.map(({ id, name, github, link, video }) => (
+      <h1>PROJECTS</h1>
+      {projects.map(({ id, name, description, github, link, video }) => (
         <div key={id} className="single-project-container">
           <h2 className="project-name">{name}</h2>
+          <p className="project-description">{description}</p>
           <p className="project-github">
             <a rel="noreferrer" href={github} target="_blank">
               Github
@@ -47,7 +59,7 @@ const Projects = () => {
           <p className="project-video">
             {video ? (
               <a rel="noreferrer" href={video} target="_blank">
-                Watch our presentation of this project!
+                Presentation
               </a>
             ) : (
               ""
