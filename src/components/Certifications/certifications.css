@@ -1,0 +1,25 @@
+.certification-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.certification-container h1 {
+  color: green;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 45px;
+}
+
+.image-container img {
+  height: 600px;
+  width: 700px;
+  padding: 10px 20px;
+}

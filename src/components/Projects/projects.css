@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .projects-container h1 {
@@ -15,14 +16,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 3px groove black;
-  padding: 55px;
+  border: 3px solid gray;
+  border-radius: 30px;
+  padding: 10px 55px;
   margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes glowAnimation {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  }
+  25% {
+    box-shadow: 0 0 20px #f78aff99;
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(111, 195, 255, 0.8);
+  }
+  75% {
+    box-shadow: 0 0 20px #f78aff99;
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+  }
 }
 
 .single-project-container:hover {
-  cursor: pointer;
-  scale: 100px;
+  animation: glowAnimation 5s linear infinite;
+}
+
+.single-project-container:hover {
+  transform: scale(1.1);
 }
 
 .project-name {
@@ -34,7 +58,7 @@
 
 .project-github a {
   text-decoration: none;
-  color: green;
+  color: rgb(255, 88, 88);
   font-size: 25px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -42,14 +66,14 @@
 
 .project-link a {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 88, 88);
   font-size: 25px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .project-video a {
-  color: white;
+  color: rgb(255, 88, 88);
   font-size: 25px;
   text-decoration: none;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",

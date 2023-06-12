@@ -32,22 +32,22 @@ const Projects = () => {
           <h2 className="project-name">{name}</h2>
           <p className="project-github">
             <a rel="noreferrer" href={github} target="_blank">
-              Checkout the repo for this project!
+              Github
             </a>
           </p>
           <p className="project-link">
             {link ? (
               <a rel="noreferrer" href={link} target="_blank">
-                {link}
+                Checkout the deployed webiste
               </a>
             ) : (
-              ""
+              " "
             )}
           </p>
           <p className="project-video">
             {video ? (
               <a rel="noreferrer" href={video} target="_blank">
-                {video}
+                Watch our presentation of this project!
               </a>
             ) : (
               ""
