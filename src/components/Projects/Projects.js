@@ -49,7 +49,7 @@ const Projects = () => {
             <p className="project-link">
               {link ? (
                 <a rel="noreferrer" href={link} target="_blank">
-                  Checkout the deployed webiste!
+                  Check out the deployed webiste!
                 </a>
               ) : null}
             </p>
