@@ -13,10 +13,6 @@ body {
   background-attachment: fixed;
 }
 
-.iFrame {
-  display: none;
-}
-
 /* Hide the scrollbar track */
 ::-webkit-scrollbar {
   width: 0px; /* Adjust the width as needed */

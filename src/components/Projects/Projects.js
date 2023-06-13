@@ -8,11 +8,9 @@ const Projects = () => {
       name: "RITH Trading App",
       description: (
         <div className="description">
-          A mock stock trading application
-          <br />
-          Interactive Charts
-          <br />
-          AI Powered Chatbot Assistant
+          <p>-A mock stock trading application</p>
+          <p>-Interactive Charts</p>
+          <p>-AI Powered Chatbot Assistant</p>
         </div>
       ),
       github:
@@ -38,35 +36,33 @@ const Projects = () => {
   return (
     <div className="projects-container">
       <h1>PROJECTS</h1>
-      {projects.map(({ id, name, description, github, link, video }) => (
-        <div key={id} className="single-project-container">
-          <h2 className="project-name">{name}</h2>
-          <p className="project-description">{description}</p>
-          <p className="project-github">
-            <a rel="noreferrer" href={github} target="_blank">
-              Github
-            </a>
-          </p>
-          <p className="project-link">
-            {link ? (
-              <a rel="noreferrer" href={link} target="_blank">
-                Checkout the deployed webiste
+      <div className="projects-only">
+        {projects.map(({ id, name, description, github, link, video }) => (
+          <div key={id} className="single-project-container">
+            <h2 className="project-name">{name}</h2>
+            <p className="project-description">{description}</p>
+            <p className="project-github">
+              <a rel="noreferrer" href={github} target="_blank">
+                Github Repository
               </a>
-            ) : (
-              " "
-            )}
-          </p>
-          <p className="project-video">
-            {video ? (
-              <a rel="noreferrer" href={video} target="_blank">
-                Presentation
-              </a>
-            ) : (
-              ""
-            )}
-          </p>
-        </div>
-      ))}
+            </p>
+            <p className="project-link">
+              {link ? (
+                <a rel="noreferrer" href={link} target="_blank">
+                  Checkout the deployed webiste!
+                </a>
+              ) : null}
+            </p>
+            <p className="project-video">
+              {video ? (
+                <a rel="noreferrer" href={video} target="_blank">
+                  Watch the presentation
+                </a>
+              ) : null}
+            </p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

@@ -5,6 +5,12 @@
   margin-bottom: 20px;
 }
 
+/* .projects-only {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
+
 .projects-container h1 {
   color: black;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -24,32 +30,30 @@
   transition: transform 0.3s ease-in-out;
   background: transparent;
   backdrop-filter: blur(3px);
+  height: fit-content;
 }
 
 @keyframes glowAnimation {
   0% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.6);
   }
   25% {
-    box-shadow: 0 0 20px #f78aff99;
+    box-shadow: 0 0 50px #00000099;
   }
   50% {
-    box-shadow: 0 0 20px rgba(111, 195, 255, 0.8);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.6);
   }
   75% {
-    box-shadow: 0 0 20px #f78aff99;
+    box-shadow: 0 0 50px #00000099;
   }
   100% {
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.6);
   }
-}
-
-.single-project-container:hover {
-  animation: glowAnimation 5s linear infinite;
 }
 
 .single-project-container:hover {
   transform: scale(1.1);
+  animation: glowAnimation 5s linear infinite;
 }
 
 .project-name {
