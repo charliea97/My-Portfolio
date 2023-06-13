@@ -4,12 +4,12 @@ import Projects from "../components/Projects/Projects";
 import Certifications from "../components/Certifications/Certifications";
 import Media from "../components/Media/Media";
 import Footer from "../components/Footer/Footer";
+import "./app.css";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      {/* <AboutMe /> */}
       <Projects />
       <Certifications />
       <Media />

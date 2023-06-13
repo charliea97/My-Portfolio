@@ -11,7 +11,7 @@
 .header h1 {
   color: black;
   margin-bottom: 3px;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .header h1 a {
@@ -32,13 +32,13 @@
 
 .header h2 {
   color: black;
-  font-size: 30px;
+  font-size: 25px;
   margin-bottom: 5px;
 }
 
 .header p {
   color: black;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 @keyframes gradientAnimation {
