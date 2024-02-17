@@ -22,6 +22,22 @@ const Header = () => {
       </h1>
       <h2>Fullstack Software Engineer</h2>
       <p>{`PERN Stack | Javascript | React | CSS`}</p>
+      <div className="my-links">
+        <a
+          rel="noreferrer"
+          href="https://github.com/charliea97"
+          target="_blank"
+        >
+          Github
+        </a>
+        <a
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/charlie-aloisio/"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+      </div>
     </div>
   );
 };

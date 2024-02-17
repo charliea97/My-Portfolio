@@ -2,7 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  letter-spacing: 3px;
+  justify-content: center;
+  letter-spacing: 2px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin-bottom: 20px;
@@ -10,7 +11,7 @@
 
 .header h1 {
   color: black;
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   font-size: 40px;
 }
 
@@ -33,12 +34,23 @@
 .header h2 {
   color: black;
   font-size: 25px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .header p {
   color: black;
   font-size: 20px;
+}
+
+.my-links a {
+  padding-right: 10px;
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.my-links a:hover {
+  color: purple;
 }
 
 @keyframes gradientAnimation {
